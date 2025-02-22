@@ -4,30 +4,53 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dab56226-4ee5-40bf-8078-b4f2a8ae9231" name="Changes" comment="JavaFX commit" />
+    <list default="true" id="dab56226-4ee5-40bf-8078-b4f2a8ae9231" name="Changes" comment="JavaFX commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/bikerentmodel/BikeDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bikerentmodel/BikeModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bikerentmodel/Roles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bikerentmodel/TableDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bikerentmodel/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.$Диаграммы проката велосипедов.drawio.dtmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Диаграммы проката велосипедов-Диаграмма сценариев использования.drawio.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/Диаграммы проката велосипедов-Диаграмма сценариев использования.drawio.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/bikerent/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bikerentUI/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/bikerent/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bikerentUI/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/bikerent/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bikerentUI/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Диаграммы проката велосипедов.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/Диаграммы проката велосипедов.drawio" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Пояснительная записка Победоносцев.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Пояснительная записка Победоносцев.docx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "GeorgeAlwaysWin"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;GeorgeAlwaysWin&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/GeorgeAlwaysWin/BikeRent.git",
-    "accountId": "4b6888e1-5715-4c81-b92d-a103e522e827"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/GeorgeAlwaysWin/BikeRent.git&quot;,
+    &quot;accountId&quot;: &quot;4b6888e1-5715-4c81-b92d-a103e522e827&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2tJYOKm8NKziM65dVbFOQedFXFH" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -35,6 +58,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.BikeDB.executor": "Run",
+    "Application.BikeModel.executor": "Run",
     "Application.HelloApplication.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -42,6 +67,15 @@
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Georgii\IdeaProjects\BikeRent\src\main\resources\bikerentUI" />
+      <recent name="C:\Users\Georgii\IdeaProjects\BikeRent\src\main\java\org\example\bikerent" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="bikerent.bikerentmodel" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -65,5 +99,21 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="JavaFX commit" />
     <option name="LAST_COMMIT_MESSAGE" value="JavaFX commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/bikerentmodel/BikeModel.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/bikerentmodel/User.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

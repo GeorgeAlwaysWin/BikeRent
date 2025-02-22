@@ -1,4 +1,4 @@
-module org.example.bikerent {
+module bikerent {
     requires javafx.controls;
     requires javafx.fxml;
 
@@ -7,7 +7,10 @@ module org.example.bikerent {
     requires net.synedra.validatorfx;
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
+    requires java.sql;
 
-    opens org.example.bikerent to javafx.fxml;
-    exports org.example.bikerent;
+    opens bikerentmodel to javafx.fxml;
+    exports bikerentmodel;
+    exports bikerentUI;
+    opens bikerentUI to javafx.fxml;
 }

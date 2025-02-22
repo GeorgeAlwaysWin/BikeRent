@@ -1,4 +1,4 @@
-package org.example.bikerent;
+package bikerentUI;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
