@@ -2,17 +2,17 @@ package bikerentmodel;
 
 import java.sql.*;
 
-public class BikeDB {
+class BikeDB {
     private BikeDB(){};
 
     private static class BikeDatabaseHolder{
         public static final BikeDB HOLDER_INSTANCE = new BikeDB();
     }
 
-    public static BikeDB getInstance(){
+    protected static BikeDB getInstance(){
         return BikeDatabaseHolder.HOLDER_INSTANCE;
     }
-    public enum CRUD {C, R, U, D}
+    protected enum CRUD {C, R, U, D}
     // JDBC URL, username and password of MySQL server
     private static final String url = "jdbc:mysql://localhost:3306/bikerentschema";
     private static final String user = "root";
@@ -21,11 +21,11 @@ public class BikeDB {
     // JDBC variables for opening and managing connection
     private static Connection con;
     private static PreparedStatement st;
-    public Object[][] res;
+    protected Object[][] res;
     /**
      * Returns Object[][] with boolean status true,false in [0][0] of array and data from select query
      */
-    public void query(String query, String[] args, CRUD query_type) {
+    protected void query(String query, String[] args, CRUD query_type) {
         this.res = null;
         try {
             // opening database connection to MySQL server
