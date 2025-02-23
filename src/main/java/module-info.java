@@ -16,4 +16,7 @@ module bikerent {
     opens bikerentUI to javafx.fxml;
     exports bikerentUI.client;
     opens bikerentUI.client to javafx.fxml;
+    opens bikerentUI.admin to javafx.fxml;
+    opens bikerentUI.worker to javafx.fxml;
+
 }

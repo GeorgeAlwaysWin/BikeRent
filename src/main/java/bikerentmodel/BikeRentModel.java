@@ -12,6 +12,7 @@ public class BikeRentModel {
             return User.reg(login, password);
         } else {return User.auth(login, password);}
     }
+
     public static boolean updateClientAddress(String address){
         return Client.updateAddress(active_user.id, address);
     }
@@ -35,6 +36,10 @@ public class BikeRentModel {
             }
         }
         return false;
+    }
+
+    public static String getActiveUserRole(){
+        return Roles.get_role(active_user.id).toString();
     }
 
     public static Object[][] getAllShops(){
@@ -87,12 +92,20 @@ public class BikeRentModel {
         return Rent.checkRentByBooking(book_id);
     }
 
-    public static void main(String[] args) {
-//        BikeDB db = BikeDB.getInstance();
-//        Object[][] res;
-//        if (User.auth("abc", "1234")){
-//            System.out.print("OK");
-//        };
+    public static void deleteShop(String shop_name){
+        Shop.deleteShop(shop_name);
+    }
 
+    public static void createShop(String shop_name, String address){
+        Shop.createShop(shop_name, address);
+    }
+
+    public static void updateShop(String old_shop_name, String new_shop_name, String address){
+        Shop.updateShop(old_shop_name, new_shop_name, address);
+    }
+
+    public static void main(String[] args) {
+        Client.updatePassword(39, "123");
+        System.out.print(User.checkPassword("abc", "123"));
     }
 }

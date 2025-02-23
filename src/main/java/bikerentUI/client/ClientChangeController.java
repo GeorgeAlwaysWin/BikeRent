@@ -14,7 +14,7 @@ import java.util.ResourceBundle;
 import static bikerentUI.client.ClientController.client;
 
 public class ClientChangeController extends PageController {
-    public static ScreenController SC;
+//    public static ScreenController SC;
 
 //    public HashMap <String, String> client;
     @FXML
@@ -59,18 +59,11 @@ public class ClientChangeController extends PageController {
 
     public void onChangePasswordButtonClick(ActionEvent actionEvent) {
         try {
-//            if (!SC.checkScreen("client-change-password")) {
-//                SC.addScreen("client-change-password", FXMLLoader.load(getClass().getResource("client-change-password-view.fxml")));
-//            }
-            SC.activate(ScreenController.Page.ClientChangePassword);
+            SC.activate(ScreenController.Page.UserChangePassword);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }
-
-
-
-
 
     public void refresh(){
 //        Pane screen = SC.getCurrentScreen();
@@ -82,7 +75,6 @@ public class ClientChangeController extends PageController {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        SC = HelloApplication.SC;
         refresh();
     }
 

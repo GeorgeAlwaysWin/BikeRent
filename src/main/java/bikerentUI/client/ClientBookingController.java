@@ -18,7 +18,6 @@ import java.util.HashMap;
 import java.util.ResourceBundle;
 
 public class ClientBookingController extends PageController {
-    public final static ScreenController SC = ScreenController.getInstance();
     public final static HashMap <String, String> models = new HashMap<>();
     public final static HashMap <String, String> shops = new HashMap<>();
 

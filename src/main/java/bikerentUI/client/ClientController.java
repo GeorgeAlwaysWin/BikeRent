@@ -1,6 +1,5 @@
 package bikerentUI.client;
 
-import bikerentUI.HelloApplication;
 import bikerentUI.PageController;
 import bikerentUI.ScreenController;
 import bikerentmodel.BikeRentModel;
@@ -18,7 +17,6 @@ import java.util.ResourceBundle;
 import java.text.SimpleDateFormat;
 
 public class ClientController extends PageController {
-    public final static ScreenController SC = ScreenController.getInstance();
     public static HashMap <String, String> client;
     @FXML
     private Button Cancel_booking;
@@ -63,15 +61,24 @@ public class ClientController extends PageController {
                         (long) booking[5]
                 ));
             } else {
-                Book_bike.setDisable(true);
-                Cancel_booking.setDisable(false);
-                Show_booking.setText(String.format("The '%s' bike is booked in %s\n at %s\n on %s\n Code: %07d",
-                        (String) booking[1],
-                        (String) booking[2],
-                        BikeRentModel.getAddressByShopName((String) booking[2]),
-                        BikeRentModel.dateToLocalDate((Date) booking[3]).toString(),
-                        (long) booking[5]
-                ));
+                LocalDate book_day = BikeRentModel.dateToLocalDate((Date) booking[3]);
+                if (book_day.isBefore(LocalDate.now())){
+                    if (BikeRentModel.cancelActiveClientBooking()) {
+                        Book_bike.setDisable(false);
+                        Cancel_booking.setDisable(true);
+                        Show_booking.setText("Book bike with a button below");
+                    }
+                } else {
+                    Book_bike.setDisable(true);
+                    Cancel_booking.setDisable(false);
+                    Show_booking.setText(String.format("The '%s' bike is booked in %s\n at %s\n on %s\n Code: %07d",
+                            (String) booking[1],
+                            (String) booking[2],
+                            BikeRentModel.getAddressByShopName((String) booking[2]),
+                            book_day.toString(),
+                            (long) booking[5]
+                    ));
+                }
             }
         }
         Login.setText("Welcome, " + (String) client.get("login"));

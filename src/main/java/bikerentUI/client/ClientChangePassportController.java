@@ -15,7 +15,7 @@ import java.util.ResourceBundle;
 import static bikerentUI.client.ClientController.client;
 
 public class ClientChangePassportController extends PageController {
-    public final static ScreenController SC = ScreenController.getInstance();
+//    public final static ScreenController SC = ScreenController.getInstance();
     @FXML
     private Label Passport;
     @FXML

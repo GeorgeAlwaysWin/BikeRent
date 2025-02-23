@@ -15,7 +15,6 @@ import java.util.ResourceBundle;
 import static bikerentUI.client.ClientController.client;
 
 public class ClientChangeAddressController extends PageController {
-    public static ScreenController SC;
 
     public void onApplyAddressButtonClick(ActionEvent actionEvent) {
         if (BikeRentModel.updateClientAddress(NewAddress.getText())){
@@ -40,7 +39,6 @@ public class ClientChangeAddressController extends PageController {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        SC = ScreenController.getInstance();
         Address.setText((String) client.get("address"));
     }
 

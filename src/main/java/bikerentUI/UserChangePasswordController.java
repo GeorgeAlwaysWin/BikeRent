@@ -1,7 +1,5 @@
-package bikerentUI.client;
+package bikerentUI;
 
-import bikerentUI.PageController;
-import bikerentUI.ScreenController;
 import bikerentmodel.BikeRentModel;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -13,8 +11,8 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class ClientChangePasswordController extends PageController {
-    public final static ScreenController SC = ScreenController.getInstance();
+public class UserChangePasswordController extends PageController {
+//    public final static ScreenController SC = ScreenController.getInstance();
     @FXML
     private PasswordField OldPassword;
     @FXML
@@ -37,7 +35,17 @@ public class ClientChangePasswordController extends PageController {
     @FXML
     public void onChangeButtonClick() {
         try {
-            SC.activate(ScreenController.Page.ClientChange);
+            switch (BikeRentModel.getActiveUserRole()){
+                case "client" -> {
+                    SC.activate(ScreenController.Page.ClientChange);
+                }
+                case "admin" -> {
+                    SC.activate(ScreenController.Page.Admin);
+                }
+                case "worker" -> {
+                    SC.activate(ScreenController.Page.WorkerChange);
+                }
+            }
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

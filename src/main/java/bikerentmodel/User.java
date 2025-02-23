@@ -35,7 +35,7 @@ class User {
     }
 
     protected static boolean checkPassword(String log, String pass){
-        db.query("SELECT user_id, login, password FROM admin UNION SELECT user_id, login, password FROM clients UNION SELECT user_id, login, password FROM workers WHERE login=?",new String[]{log},BikeDB.CRUD.R);
+        db.query("SELECT * FROM (SELECT user_id, login, password FROM admin UNION SELECT user_id, login, password FROM clients UNION SELECT user_id, login, password FROM workers) AS U WHERE login=?",new String[]{log},BikeDB.CRUD.R);
         if ((boolean) db.res[0][0]){
             String md5pass = md5hash(pass);
             if (md5pass.equals((String) db.res[1][2])){

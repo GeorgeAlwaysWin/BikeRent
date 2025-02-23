@@ -21,7 +21,17 @@ public class HelloController extends PageController {
     public void onLoginButtonClick() {
         if (BikeRentModel.Authorization(log.getText(), pass.getText(), false)){
             try {
-                SC.activate(ScreenController.Page.Client);
+                switch (BikeRentModel.getActiveUserRole()){
+                    case "client" -> {
+                        SC.activate(ScreenController.Page.Client);
+                    }
+                    case "admin" -> {
+                        SC.activate(ScreenController.Page.Admin);
+                    }
+                    case "worker" -> {
+                        SC.activate(ScreenController.Page.Worker);
+                    }
+                }
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
