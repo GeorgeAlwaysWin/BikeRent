@@ -18,8 +18,10 @@ public class BikeModel {
         return Client.updatePassport(active_user.id, passport);
     }
 
-    public static boolean updatePassword(String password){
-        return Client.updatePassport(active_user.id, passport);
+    public static boolean updatePassword(String oldpass, String newpass){
+        if (User.checkPassword(active_user.login, oldpass)) {
+            return Client.updatePassword(active_user.id, newpass);
+        } else {return false;}
     }
 
     public static HashMap<String, String> getClientInfo(){

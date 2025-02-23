@@ -4,28 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dab56226-4ee5-40bf-8078-b4f2a8ae9231" name="Changes" comment="Most of the model completed and configured">
-      <change afterPath="$PROJECT_DIR$/src/main/java/bikerentUI/PageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bikerentUI/ScreenController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bikerentUI/client/ClientChangeAddressController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bikerentUI/client/ClientChangeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bikerentUI/client/ClientChangePassportController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bikerentUI/client/ClientController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bikerentmodel/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/bikerentUI/client/client-change-address-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/bikerentUI/client/client-change-passport-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/bikerentUI/client/client-change-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/bikerentUI/client/client-view.fxml" afterDir="false" />
+    <list default="true" id="dab56226-4ee5-40bf-8078-b4f2a8ae9231" name="Changes" comment="JavaFX configured, realized most of client functionality">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bikerentUI/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bikerentUI/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bikerentUI/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bikerentUI/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bikerentmodel/BikeDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bikerentmodel/BikeDB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bikerentmodel/BikeModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bikerentmodel/BikeModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bikerentmodel/Roles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bikerentmodel/Roles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bikerentmodel/TableDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bikerentmodel/TableDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bikerentmodel/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bikerentmodel/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bikerentUI/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bikerentUI/hello-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,20 +111,29 @@
       <option name="project" value="LOCAL" />
       <updated>1740237496612</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="JavaFX configured, realized most of client functionality">
+      <option name="closed" value="true" />
+      <created>1740305087630</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1740305087630</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="JavaFX commit" />
     <MESSAGE value="Most of the model completed and configured" />
-    <option name="LAST_COMMIT_MESSAGE" value="Most of the model completed and configured" />
+    <MESSAGE value="JavaFX configured, realized most of client functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="JavaFX configured, realized most of client functionality" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/bikerentmodel/BikeModel.java</url>
-          <line>37</line>
+          <line>39</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
