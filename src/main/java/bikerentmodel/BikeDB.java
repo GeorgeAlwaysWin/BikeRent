@@ -1,6 +1,9 @@
 package bikerentmodel;
 
 import java.sql.*;
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.ZoneId;
 
 class BikeDB {
     private BikeDB(){};
@@ -87,5 +90,9 @@ class BikeDB {
                 st.close();
             } catch (SQLException se) { /*can't do anything */ }
         }
+    }
+
+    protected static LocalDate dateToLocaldate(Date date){
+        return date.toLocalDate();
     }
 }

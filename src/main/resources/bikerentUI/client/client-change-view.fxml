@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.*?>
+<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
@@ -31,8 +32,20 @@
          <Label fx:id="Address" text="No address" GridPane.columnIndex="1" GridPane.rowIndex="2" />
       </children>
    </GridPane>
-   <Button mnemonicParsing="false" onAction="#onChangePasswordButtonClick" text="Change password" />
-   <Button mnemonicParsing="false" onAction="#onChangePassportButtonClick" text="Change passport" />
-  <Button onAction="#onChangeAddressButtonClick" text="Change address" />
-  <Button onAction="#onBackButtonClick" text="Back" />
+   <Button mnemonicParsing="false" onAction="#onChangePasswordButtonClick" text="Change password">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor></Button>
+   <Button mnemonicParsing="false" onAction="#onChangePassportButtonClick" text="Change passport">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor></Button>
+  <Button onAction="#onChangeAddressButtonClick" text="Change address">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor></Button>
+  <Button onAction="#onBackButtonClick" text="Back">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor></Button>
 </VBox>

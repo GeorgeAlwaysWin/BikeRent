@@ -1,12 +1,9 @@
 package bikerentUI;
 
-import bikerentmodel.BikeModel;
-import javafx.event.ActionEvent;
+import bikerentmodel.BikeRentModel;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.scene.control.*;
 
-import java.beans.PropertyChangeEvent;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -22,7 +19,7 @@ public class HelloController extends PageController {
 
     @FXML
     public void onLoginButtonClick() {
-        if (BikeModel.Authorization(log.getText(), pass.getText(), false)){
+        if (BikeRentModel.Authorization(log.getText(), pass.getText(), false)){
             try {
                 SC.activate(ScreenController.Page.Client);
             } catch (IOException e) {
@@ -34,7 +31,7 @@ public class HelloController extends PageController {
     }
     @FXML
     public void onRegButtonClick() {
-        if (BikeModel.Authorization(log.getText(), pass.getText(), true)){
+        if (BikeRentModel.Authorization(log.getText(), pass.getText(), true)){
             try {
                 SC.activate(ScreenController.Page.Client);
             } catch (IOException e) {
@@ -55,8 +52,4 @@ public class HelloController extends PageController {
 //        SC = HelloApplication.SC;
     }
 
-    @Override
-    public void propertyChange(PropertyChangeEvent evt) {
-
-    }
 }

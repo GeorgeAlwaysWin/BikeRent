@@ -3,13 +3,10 @@ package bikerentUI.client;
 import bikerentUI.HelloApplication;
 import bikerentUI.PageController;
 import bikerentUI.ScreenController;
-import bikerentmodel.BikeModel;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Label;
 
-import java.beans.PropertyChangeEvent;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -89,8 +86,4 @@ public class ClientChangeController extends PageController {
         refresh();
     }
 
-    @Override
-    public void propertyChange(PropertyChangeEvent evt) {
-//        refresh();
-    }
 }

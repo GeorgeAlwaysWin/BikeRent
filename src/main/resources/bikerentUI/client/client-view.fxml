@@ -1,15 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.*?>
+<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12" fx:controller="bikerentUI.client.ClientController">
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bikerentUI.client.ClientController">
   <padding>
     <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
   </padding>
   <Label fx:id="Login">Not authorized</Label>
-  <Button onAction="#onChangeButtonClick" text="Change profile info" />
-  <Button onAction="#onBookButtonClick" text="Book bike" />
-   <Button onAction="#onLogOutButtonClick" mnemonicParsing="false" text="Log out" />
+   <Label fx:id="Show_booking" text="Book bike with a button below" />
+  <Button fx:id="Book_bike" onAction="#onBookButtonClick" text="Book bike">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor></Button>
+   <Button fx:id="Cancel_booking" disable="true" mnemonicParsing="false" onAction="#onCancelBookingButtonClick" text="Cancel booking">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+  <Button onAction="#onChangeButtonClick" text="Change profile info">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor></Button>
+   <Button mnemonicParsing="false" onAction="#onLogOutButtonClick" text="Log out">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor></Button>
 </VBox>
