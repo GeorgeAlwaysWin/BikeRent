@@ -20,4 +20,22 @@ class Model extends TableDB{
         }
         return null;
     }
+
+    protected static boolean updateBikeModel(String old_model_name, String new_model_name, String type, String gears){
+        String q = "UPDATE bike_models SET bike_model=?, type=?, gears=? WHERE bike_model=?";
+        db.query(q, new String[]{new_model_name, type, gears, old_model_name}, BikeDB.CRUD.U);
+        return (boolean) db.res[0][0];
+    }
+
+    protected static boolean deleteBikeModel(String model_name){
+        String q = "DELETE FROM bike_models WHERE bike_model=?";
+        db.query(q, new String[]{model_name}, BikeDB.CRUD.D);
+        return (boolean) db.res[0][0];
+    }
+
+    protected static boolean createBikeModel(String model_name, String type, String gears){
+        String q = "INSERT INTO bike_models (bike_model, type, gears) VALUES (?,?,?)";
+        db.query(q, new String[]{model_name, type, gears}, BikeDB.CRUD.C);
+        return (boolean) db.res[0][0];
+    }
 }

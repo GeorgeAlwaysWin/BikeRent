@@ -17,8 +17,8 @@ public class HelloController extends PageController {
     @FXML
     private PasswordField pass;
 
-    @FXML
-    public void onLoginButtonClick() {
+
+    public void logUser(){
         if (BikeRentModel.Authorization(log.getText(), pass.getText(), false)){
             try {
                 switch (BikeRentModel.getActiveUserRole()){
@@ -39,14 +39,15 @@ public class HelloController extends PageController {
             errorText.setText("Invalid credentials");
         }
     }
+
+    @FXML
+    public void onLoginButtonClick() {
+        logUser();
+    }
     @FXML
     public void onRegButtonClick() {
         if (BikeRentModel.Authorization(log.getText(), pass.getText(), true)){
-            try {
-                SC.activate(ScreenController.Page.Client);
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
+            logUser();
         } else {
             errorText.setText("This login is already exist");
         }

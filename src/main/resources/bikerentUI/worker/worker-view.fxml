@@ -23,10 +23,15 @@
       <cursor>
          <Cursor fx:constant="HAND" />
       </cursor></Button>
-    <Button mnemonicParsing="false" onAction="#onChangeButtonClick" text="Change profile info">
+    <Button mnemonicParsing="false" onAction="#onChangeShopButtonClick" text="Change shop">
         <cursor>
             <Cursor fx:constant="HAND" />
     </cursor></Button>
+   <Button layoutX="30.0" layoutY="204.0" mnemonicParsing="false" onAction="#onChangePasswordButtonClick" text="Change password">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
    <Button mnemonicParsing="false" onAction="#onLogOutButtonClick" text="Log out">
       <cursor>
          <Cursor fx:constant="HAND" />

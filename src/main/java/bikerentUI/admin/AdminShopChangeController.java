@@ -21,6 +21,9 @@ public class AdminShopChangeController extends PageController {
     public final static HashMap <String, String> shops = new HashMap<>();
 
     @FXML
+    private Label Status;
+
+    @FXML
     private ChoiceBox<String> Shops;
 
     @FXML
@@ -54,6 +57,7 @@ public class AdminShopChangeController extends PageController {
         Shop_name.setText("");
         Address.setText("");
         Shops.setValue("");
+        Status.setText("");
     }
 
     @Override
@@ -105,25 +109,52 @@ public class AdminShopChangeController extends PageController {
     }
 
     public void onApplyButtonClick(ActionEvent actionEvent) {
+        if (Actions.getValue() == null){
+            return;
+        }
         switch (Actions.getValue()){
             case "Create" -> {
-                BikeRentModel.createShop(Shop_name.getText(), Address.getText());
+                String name = Shop_name.getText();
+                String address = Address.getText();
+                if ((Objects.equals(name, "")) | (Objects.equals(address, ""))){
+                    Status.setText("Enter shop name and address");
+                    Status.setStyle("-fx-text-fill: red");
+                    return;
+                }
+                BikeRentModel.createShop(name, address);
                 updateShops();
                 clear_fields();
+                Status.setText("Shop created");
+                Status.setStyle("-fx-text-fill: green");
             }
             case "Update" -> {
-                BikeRentModel.updateShop(Shops.getValue(), Shop_name.getText(), Address.getText());
-                shops.remove(Shops.getValue());
-                shops.put(Shop_name.getText(), Address.getText());
+                String name = Shop_name.getText();
+                String address = Address.getText();
+                if ((Objects.equals(name, "")) | (Objects.equals(address, ""))){
+                    Status.setText("Name and address can not be empty");
+                    Status.setStyle("-fx-text-fill: red");
+                    return;
+                }
+                BikeRentModel.updateShop(Shops.getValue(), name, address);
                 updateShops();
-                Shops.setValue(Shop_name.getText());
+                Shops.setValue(name);
+                Status.setText("Shop updated");
+                Status.setStyle("-fx-text-fill: green");
             }
             case  "Delete" -> {
-                if (!Objects.equals(Shops.getValue(), ""))
-                BikeRentModel.deleteShop(Shops.getValue());
-                shops.remove(Shops.getValue());
-                Shops.getItems().remove(Shops.getValue());
-                clear_fields();
+                String name = Shops.getValue();
+                if (!Objects.equals(name, "")) {
+                    BikeRentModel.deleteShop(name);
+                    shops.remove(name);
+                    Shops.getItems().remove(name);
+                    clear_fields();
+                    Status.setText("Shop deleted");
+                    Status.setStyle("-fx-text-fill: green");
+                } else {
+                    Status.setText("Choose a shop");
+                    Status.setStyle("-fx-text-fill: red");
+                    return;
+                }
             }
         }
     }

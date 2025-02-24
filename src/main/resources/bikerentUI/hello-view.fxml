@@ -10,8 +10,8 @@
     <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
   </padding>
 
-  <TextField fx:id="log" promptText="Login" text="admin">abc</TextField>
-  <PasswordField fx:id="pass" promptText="Password" text="admin">123</PasswordField>
+  <TextField fx:id="log" promptText="Login" text="worker">abc</TextField>
+  <PasswordField fx:id="pass" promptText="Password" text="worker">123</PasswordField>
   <Label fx:id="errorText" style="-fx-text-fill: red" />
   <Button onAction="#onLoginButtonClick" text="Login">
       <cursor>

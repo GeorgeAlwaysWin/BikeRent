@@ -10,6 +10,7 @@ import javafx.scene.control.TextField;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.Objects;
 import java.util.ResourceBundle;
 
 import static bikerentUI.client.ClientController.client;
@@ -19,7 +20,8 @@ public class ClientChangeAddressController extends PageController {
     public void onApplyAddressButtonClick(ActionEvent actionEvent) {
         if (BikeRentModel.updateClientAddress(NewAddress.getText())){
             client = BikeRentModel.getClientInfo();
-            Address.setText((String) client.get("address"));
+            String address = (String) client.get("address");
+            Address.setText("Current address: " + address + "\nEnter new address:");
         };
     }
 
@@ -39,7 +41,10 @@ public class ClientChangeAddressController extends PageController {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        Address.setText((String) client.get("address"));
+        String address = (String) client.get("address");
+        if (!Objects.equals(address, "")) {
+            Address.setText("Current address: " + address + "\nEnter new address:");
+        }
     }
 
 }

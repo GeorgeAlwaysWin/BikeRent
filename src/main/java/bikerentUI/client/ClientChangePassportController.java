@@ -10,6 +10,7 @@ import javafx.scene.control.TextField;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.Objects;
 import java.util.ResourceBundle;
 
 import static bikerentUI.client.ClientController.client;
@@ -26,7 +27,8 @@ public class ClientChangePassportController extends PageController {
     public void onApplyPassportButtonClick(ActionEvent actionEvent) {
         if (BikeRentModel.updateClientPassport(NewPassport.getText())){
             client = BikeRentModel.getClientInfo();
-            Passport.setText((String) client.get("passport"));
+            String passport = (String) client.get("passport");
+            Passport.setText("Current passport: " + passport + "\nEnter new passport:");
             errorText.setText("");
         } else {
             errorText.setText("Enter 10 digits");
@@ -36,11 +38,7 @@ public class ClientChangePassportController extends PageController {
     @FXML
     public void onChangeButtonClick() {
         try {
-//            if (!SC.checkScreen("client-change")) {
-//                SC.addScreen("client-change", FXMLLoader.load(getClass().getResource("client-change-view.fxml")));
-//            }
             SC.activate(ScreenController.Page.ClientChange);
-//            SC.notify("Scene","CCAC","CCC");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -48,7 +46,10 @@ public class ClientChangePassportController extends PageController {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        Passport.setText((String) client.get("passport"));
+        String passport = (String) client.get("passport");
+        if (!Objects.equals(passport, "")) {
+            Passport.setText("Current passport: " + passport + "\nEnter new passport:");
+        }
     }
 
 }

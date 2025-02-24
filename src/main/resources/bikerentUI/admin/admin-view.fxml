@@ -19,7 +19,7 @@
          <Cursor fx:constant="HAND" />
       </cursor>
    </Button>
-  <Button onAction="#onChangeButtonClick" text="Change profile info">
+  <Button onAction="#onChangeButtonClick" text="Change password">
       <cursor>
          <Cursor fx:constant="HAND" />
       </cursor></Button>

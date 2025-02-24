@@ -18,10 +18,12 @@ import java.text.SimpleDateFormat;
 
 public class AdminController extends PageController {
 //    public final static ScreenController SC = ScreenController.getInstance();
+    @FXML
+    private Label Login;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
+        Login.setText(BikeRentModel.getActiveUser());
     }
 
     public void onUserButtonClick(ActionEvent actionEvent) {

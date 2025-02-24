@@ -9,7 +9,7 @@ import java.util.HashMap;
 
 public class ScreenController {
     private Scene scene;
-    public enum Page {Hello, Client, Admin, Worker, ClientChange, ClientChangePassport, UserChangePassword, ClientChangeAddress, ClientBooking, WorkerChange, AdminUserChange, AdminShopChange};
+    public enum Page {Hello, Client, Admin, Worker, ClientChange, ClientChangePassport, UserChangePassword, ClientChangeAddress, ClientBooking, WorkerChange, AdminUserChange, WorkerBookingControl, WorkerBikeChange, WorkerModelChange, WorkerShop, AdminShopChange};
     private Page currentScene;
     public final HashMap <Page, String> fxmls = new HashMap<Page, String>();
 
@@ -23,7 +23,10 @@ public class ScreenController {
         this.fxmls.put(Page.ClientChangeAddress, "client/client-change-address-view.fxml");
         this.fxmls.put(Page.ClientChangePassport, "client/client-change-passport-view.fxml");
         this.fxmls.put(Page.UserChangePassword, "user-change-password-view.fxml");
-        this.fxmls.put(Page.WorkerChange, "worker/worker-change-view.fxml");
+        this.fxmls.put(Page.WorkerBookingControl, "worker/worker-booking-control-view.fxml");
+        this.fxmls.put(Page.WorkerBikeChange, "worker/worker-bike-change-view.fxml");
+        this.fxmls.put(Page.WorkerModelChange, "worker/worker-model-change-view.fxml");
+        this.fxmls.put(Page.WorkerShop, "worker/worker-shop-view.fxml");
         this.fxmls.put(Page.AdminUserChange, "admin/admin-user-change-view.fxml");
         this.fxmls.put(Page.AdminShopChange, "admin/admin-shop-change-view.fxml");
 

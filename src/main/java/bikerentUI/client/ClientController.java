@@ -51,8 +51,8 @@ public class ClientController extends PageController {
         Object[] booking = BikeRentModel.getActiveClientBooking();
         if (booking != null){
             if (BikeRentModel.checkRentByBooking((long) booking[5])){
-                Book_bike.setDisable(false);
-                Cancel_booking.setDisable(false);
+                Book_bike.setDisable(true);
+                Cancel_booking.setDisable(true);
                 Show_booking.setText(String.format("The '%s' bike is rented in %s\n at %s\n for %s days\n Return bike with code: %07d",
                         (String) booking[1],
                         (String) booking[2],

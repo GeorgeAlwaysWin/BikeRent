@@ -21,7 +21,7 @@ public class UserChangePasswordController extends PageController {
     private Label errorText;
 
     public void onApplyPasswordButtonClick(ActionEvent actionEvent) {
-        if (BikeRentModel.updatePassword(OldPassword.getText(), NewPassword.getText())){
+        if (BikeRentModel.updateActiveUserPassword(OldPassword.getText(), NewPassword.getText())){
             OldPassword.setText("");
             NewPassword.setText("");
             errorText.setText("Password changed");
@@ -43,7 +43,7 @@ public class UserChangePasswordController extends PageController {
                     SC.activate(ScreenController.Page.Admin);
                 }
                 case "worker" -> {
-                    SC.activate(ScreenController.Page.WorkerChange);
+                    SC.activate(ScreenController.Page.Worker);
                 }
             }
         } catch (IOException e) {

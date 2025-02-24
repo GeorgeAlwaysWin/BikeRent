@@ -5,7 +5,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox alignment="CENTER" prefHeight="248.0" prefWidth="269.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bikerentUI.admin.AdminShopChangeController">
+<VBox alignment="CENTER" prefHeight="248.0" prefWidth="269.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bikerentUI.admin.AdminUserChangeController">
   <padding>
     <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
   </padding>
@@ -25,31 +25,36 @@
    </HBox>
    <HBox alignment="BASELINE_CENTER" prefHeight="0.0" prefWidth="200.0">
       <children>
-         <Label text="Shop">
-            <HBox.margin>
-               <Insets right="10.0" />
-            </HBox.margin></Label>
-        <ChoiceBox fx:id="Shops" disable="true" prefWidth="150.0">
-            <cursor>
-               <Cursor fx:constant="HAND" />
-            </cursor>
-        </ChoiceBox>
-      </children>
-   </HBox>
-   <HBox alignment="BASELINE_CENTER" prefHeight="0.0" prefWidth="200.0">
-      <children>
          <Label text="Name">
             <HBox.margin>
                <Insets right="5.0" />
             </HBox.margin>
          </Label>
-         <TextField fx:id="Shop_name" disable="true" />
+         <TextField fx:id="Username" disable="true" />
+         <Button fx:id="SearchButton" disable="true" mnemonicParsing="false" onAction="#onSearchButtonClick" prefHeight="26.0" prefWidth="34.0" text="🔍" />
       </children>
    </HBox>
-   <HBox alignment="BASELINE_CENTER" layoutX="30.0" layoutY="111.0" prefHeight="0.0" prefWidth="200.0">
+   <HBox alignment="BASELINE_CENTER" layoutX="30.0" layoutY="76.0" prefHeight="0.0" prefWidth="200.0">
       <children>
-         <Label text="Address" />
-         <TextField fx:id="Address" disable="true" />
+         <Label text="Password">
+            <HBox.margin>
+               <Insets right="5.0" />
+            </HBox.margin>
+         </Label>
+         <TextField fx:id="Password" disable="true" />
+      </children>
+   </HBox>
+   <HBox alignment="BASELINE_CENTER" prefHeight="0.0" prefWidth="200.0">
+      <children>
+         <Label text="Role">
+            <HBox.margin>
+               <Insets right="10.0" />
+            </HBox.margin></Label>
+        <ChoiceBox fx:id="Roles" disable="true" prefWidth="150.0">
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+        </ChoiceBox>
       </children>
    </HBox>
    <Label fx:id="Status" />

@@ -9,7 +9,7 @@
   <padding>
     <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
   </padding>
-  <Label fx:id="Address" text="No address" />
+  <Label fx:id="Address" text="Enter new address:" />
    <TextField fx:id="NewAddress">
       <cursor>
          <Cursor fx:constant="TEXT" />
