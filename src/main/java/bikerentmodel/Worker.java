@@ -1,12 +1,6 @@
 package bikerentmodel;
 
 class Worker extends TableDB{
-    public long id;
-    public String login;
-
-    protected Worker(String login, String passport, String address){
-        this.login = login;
-    }
 
     protected static boolean updatePassword(String login, String password){
         String passmd5 = User.pass_change(password);
@@ -14,13 +8,13 @@ class Worker extends TableDB{
         return (boolean) db.res[0][0];
     }
 
-    protected static String getById(long id){
-        db.query("SELECT login FROM workers WHERE user_id=?", new String[]{Long.toString(id)}, BikeDB.CRUD.R);
-        if ((boolean) db.res[0][0]){
-            return (String) db.res[1][0];
-        }
-        return null;
-    }
+//    protected static String getById(long id){
+//        db.query("SELECT login FROM workers WHERE user_id=?", new String[]{Long.toString(id)}, BikeDB.CRUD.R);
+//        if ((boolean) db.res[0][0]){
+//            return (String) db.res[1][0];
+//        }
+//        return null;
+//    }
 
     protected static Long getId(String login){
         db.query("SELECT user_id FROM workers WHERE login=?", new String[]{login}, BikeDB.CRUD.R);

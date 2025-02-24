@@ -1,7 +1,6 @@
 package bikerentmodel;
 
 import java.sql.Date;
-import java.sql.Timestamp;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.HashMap;
@@ -81,9 +80,9 @@ public class BikeRentModel {
         return Booking.cancelClientBooking(active_user.login);
     }
 
-    public static boolean cancelOutdatedBookings(){
-        return Booking.cancelOutdatedBookings();
-    }
+//    public static boolean cancelOutdatedBookings(){
+//        return Booking.cancelOutdatedBookings();
+//    }
 
     public static boolean bookBike(String bike_model, String shop_name, LocalDate start_date){
         return Booking.bookBike(active_user.login, bike_model, shop_name, start_date);
@@ -137,7 +136,7 @@ public class BikeRentModel {
             case client -> {
                 Long id = Client.getId(login);
                 Client.delete(login);
-                Roles.delete_role_by_id(id);
+                Roles.deleteRoleById(id);
                 id = (Long) Booking.getId(login);
                 if (id!=null) {
                     Booking.delete(login);
@@ -148,13 +147,13 @@ public class BikeRentModel {
             case admin -> {
                 Long id = Admin.getId(login);
                 Admin.delete(login);
-                Roles.delete_role_by_id(id);
+                Roles.deleteRoleById(id);
                 return true;
             }
             case worker -> {
                 long id = Worker.getId(login);
                 Worker.delete(login);
-                Roles.delete_role_by_id(id);
+                Roles.deleteRoleById(id);
                 Worker.clearShop(login);
                 return true;
             }

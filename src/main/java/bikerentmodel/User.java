@@ -47,12 +47,6 @@ class User {
         if (pass.equals(old_pass)){
             return true;
         }
-//        if (old_pass != null){
-//            String md5pass = md5hash(pass);
-//            if (md5pass.equals(old_pass)){
-//                return true;
-//            }
-//        }
         return false;
     }
 

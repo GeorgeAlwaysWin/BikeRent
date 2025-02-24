@@ -4,16 +4,6 @@ import java.util.HashMap;
 import java.util.regex.Pattern;
 
 class Client extends TableDB{
-    public long id;
-    public String login;
-    public String passport;
-    public String address;
-
-    protected Client(String login, String passport, String address){
-        this.login = login;
-        this.passport = passport;
-        this.address = address;
-    }
 
     protected static HashMap<String, String> get(String login){
         db.query("SELECT passport, address FROM clients WHERE login=?", new String[]{login}, BikeDB.CRUD.R);

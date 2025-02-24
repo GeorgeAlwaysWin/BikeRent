@@ -5,13 +5,6 @@ import java.util.HashMap;
 import java.util.regex.Pattern;
 
 class Shop extends TableDB{
-    public String name;
-    public String address;
-
-    protected Shop(String name, String address){
-        this.name = name;
-        this.address = address;
-    }
 
     protected static Object[][] getAllShops(){
         db.query("SELECT * FROM shops", new String[]{}, BikeDB.CRUD.R);
