@@ -63,11 +63,15 @@ public class WorkerBookingControlController extends PageController {
             if (bike_id == null){
                 Rent.setText("Out of stock");
                 Rent.setStyle("-fx-text-fill: red");
+                ApplyButton.setDisable(true);
+                ApplyButton.setText("Unavailable");
                 return;
             }
             if (BikeRentModel.startRent((Long) booking.get("book_id"), bike_id)){
                 Rent.setText(String.format("Rent started.\n Bike id: %07d", bike_id));
                 Rent.setStyle("-fx-text-fill: green");
+                ApplyButton.setDisable(true);
+                ApplyButton.setText("Unavailable");
             }
         }
     }

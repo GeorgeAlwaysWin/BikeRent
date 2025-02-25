@@ -9,15 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dab56226-4ee5-40bf-8078-b4f2a8ae9231" name="Changes" comment="Alpha version ready commit">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/BikeRent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/BikeRent.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/BikeRent_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/BikeRent_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="dab56226-4ee5-40bf-8078-b4f2a8ae9231" name="Changes" comment="Added check that client in the right shop">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bikerentUI/worker/WorkerBookingControlController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bikerentUI/worker/WorkerBookingControlController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Пояснительная записка Победоносцев.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Пояснительная записка Победоносцев.docx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +198,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740430155929</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added check that client in the right shop">
+      <option name="closed" value="true" />
+      <created>1740465597734</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1740465597734</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -213,7 +216,8 @@
     <MESSAGE value="JavaFX configured, realized most of client functionality, no errors" />
     <MESSAGE value="All client functional is completed" />
     <MESSAGE value="Alpha version ready commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Alpha version ready commit" />
+    <MESSAGE value="Added check that client in the right shop" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added check that client in the right shop" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
