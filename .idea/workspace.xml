@@ -10,28 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dab56226-4ee5-40bf-8078-b4f2a8ae9231" name="Changes" comment="Alpha version ready commit">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/BikeRent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/BikeRent_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/BikeRent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/BikeRent.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/BikeRent_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/BikeRent_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Диаграммы проката велосипедов-CRUD.drawio.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/Диаграммы проката велосипедов-CRUD.drawio.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Диаграммы проката велосипедов-Диаграмма сценариев использования.drawio.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/Диаграммы проката велосипедов-Диаграмма сценариев использования.drawio.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Диаграммы проката велосипедов-Реляционная модель.drawio.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/Диаграммы проката велосипедов-Реляционная модель.drawio.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Диаграммы проката велосипедов-Физическая модель.drawio.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/Диаграммы проката велосипедов-Физическая модель.drawio.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bikerentmodel/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bikerentmodel/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bikerentmodel/Bike.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bikerentmodel/Bike.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bikerentmodel/BikeRentModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bikerentmodel/BikeRentModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bikerentmodel/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bikerentmodel/Booking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bikerentmodel/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bikerentmodel/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bikerentmodel/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bikerentmodel/Model.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bikerentmodel/Rent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bikerentmodel/Rent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bikerentmodel/Roles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bikerentmodel/Roles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bikerentmodel/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bikerentmodel/Shop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bikerentmodel/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bikerentmodel/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bikerentmodel/Worker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bikerentmodel/Worker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bikerentUI/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bikerentUI/hello-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Диаграммы проката велосипедов.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/Диаграммы проката велосипедов.drawio" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Пояснительная записка Победоносцев.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Пояснительная записка Победоносцев.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bikerentUI/worker/WorkerBookingControlController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bikerentUI/worker/WorkerBookingControlController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +47,13 @@
     &quot;accountId&quot;: &quot;4b6888e1-5715-4c81-b92d-a103e522e827&quot;
   }
 }</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -72,29 +65,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.BikeDB.executor": "Run",
-    "Application.BikeModel.executor": "Run",
-    "Application.BikeRent.executor": "Run",
-    "Application.BikeRentModel.executor": "Run",
-    "Application.HelloApplication.executor": "Debug",
-    "Downloaded.Files.Path.Enabled": "true",
-    "JAR Application.BikeRent.jar.executor": "Run",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Georgii/IdeaProjects/BikeRent/src/main/resources/bikerentUI/worker",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.445977"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.BikeDB.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BikeModel.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BikeRent.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BikeRentModel.executor&quot;: &quot;Run&quot;,
+    &quot;Application.HelloApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
+    &quot;JAR Application.BikeRent.jar.executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Georgii/IdeaProjects/BikeRent&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.44678715&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Georgii\IdeaProjects\BikeRent\src\main\resources\bikerentUI\worker" />
@@ -120,14 +114,7 @@
       <recent name="bikerentUI" />
     </key>
   </component>
-  <component name="RunManager" selected="JAR Application.BikeRent.jar">
-    <configuration name="BikeRent" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="bikerentUI.HelloApplication" />
-      <module name="BikeRent" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.BikeRent">
     <configuration name="BikeRentModel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bikerentmodel.BikeRentModel" />
       <module name="BikeRent" />
@@ -141,13 +128,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BikeRent.jar" type="JarApplication" temporary="true">
-      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/BikeRent_jar/BikeRent.jar" />
-      <method v="2" />
-    </configuration>
+    <list>
+      <item itemvalue="Application.BikeRent" />
+      <item itemvalue="Application.BikeRentModel" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JAR Application.BikeRent.jar" />
         <item itemvalue="Application.BikeRentModel" />
       </list>
     </recent_temporary>
@@ -209,7 +195,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740422829261</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Alpha version ready commit">
+      <option name="closed" value="true" />
+      <created>1740430155929</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1740430155929</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

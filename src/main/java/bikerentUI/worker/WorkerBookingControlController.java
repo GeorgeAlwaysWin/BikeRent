@@ -85,7 +85,11 @@ public class WorkerBookingControlController extends PageController {
             Rent.setStyle("-fx-text-fill: red");
             return;
         }
-
+        if (booking.get("shop_name")!=BikeRentModel.getShop()){
+            Rent.setText("Bike booked in other shop: " + booking.get("shop_name"));
+            Rent.setStyle("-fx-text-fill: red");
+            return;
+        }
         if (BikeRentModel.checkRentByBooking((Long) booking.get("book_id"))){
             Rent.setText(String.format("Bike is currently rented.\nCode: %07d",(Long) booking.get("book_id")));
             Rent.setStyle("-fx-text-fill: green");
